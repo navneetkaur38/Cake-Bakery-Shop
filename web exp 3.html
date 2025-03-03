@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Bakery Shop</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff5e6;
+            color: #5a3e36;
+            text-align: center;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #8b4513;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header */
+        header {
+            background-color: #d2691e;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .gallery .cake-item {
+            display: inline-block;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .gallery img {
+            width: 250px;
+            height: 200px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #d2691e;
+            margin-top: 5px;
+        }
+
+        .order-btn {
+            background-color: #8b4513;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+
+        .order-btn:hover {
+            background-color: #5a3e36;
+        }
+
+        /* About Section */
+        .about {
+            background-color: #ffdab9;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #f8d7a6;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .contact input, .contact textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #8b4513;
+            border-radius: 5px;
+        }
+
+        .contact button {
+            background-color: #8b4513;
+            color: white;
+            padding: 10px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .contact button:hover {
+            background-color: #5a3e36;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #d2691e;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#gallery">Cakes</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to Our Cake Bakery</h1>
+    </header>
+
+    <!-- Gallery Section -->
+    <main>
+        <section class="gallery" id="gallery">
+            <h2>Our Delicious Cakes</h2>
+            <div class="cake-item">
+                <img src="C:\Users\navne\web exp 3\images\choclate cake.avif" alt="Chocolate Cake">
+                <p class="price">₹500</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+            <div class="cake-item">
+                <img src="C:\Users\navne\OneDrive\Downloads\Vanilla-Cake-photo.jpg" alt="Vanilla Cake">
+                <p class="price">₹450</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+            <div class="cake-item">
+                <img src="C:\Users\navne\web exp 3\images\red velvet.jpeg" alt="Red Velvet Cake">
+                <p class="price">₹600</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <h2>About Us</h2>
+            <p>We offer a variety of delicious cakes made with the finest ingredients. Come visit us!</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Cake Bakery Shop</p>
+    </footer>
+
+</body>
+</html>
